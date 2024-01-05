@@ -1,0 +1,83 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e3eb;
+}
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+}
+.title {
+  margin: 40px 0;
+  text-align: center;
+}
+.title h1 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+}
+.title p {
+  font-size: 1em;
+}
+.calculator {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: #f7f8f9;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin: 10px 0;
+  font-size: 3em;
+  background: none;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #e9f0f4;
+  color: #787d83;
+}
+.buttons button:active {
+  transform: scale(0.9);
+}
+.operator {
+  font-weight: 400;
+  background-color: #ff9701 !important;
+  color: lightcyan !important;
+}
+.operator:nth-child(1) {
+  background-color: #ff5c5c !important;
+}
+.operator:nth-child(2) {
+  background-color: #ff5c5c !important;
+}
+.operator:last-child {
+  background-color: #29cb75 !important;
+}
